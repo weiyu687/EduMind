@@ -1,0 +1,24 @@
+# 忽略PyCharm项目配置
+.idea/
+
+# 忽略Python编译后的字节码文件
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 忽略虚拟环境
+venv/
+.venv/
+ENV/
+
+# 忽略日志文件
+logs/
+*.log
+
+# 忽略操作系统特定的文件
+.DS_Store
+Thumbs.db
+
+# 忽略敏感信息文件
+.env
+config/local_settings.py
