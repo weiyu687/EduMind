@@ -1,5 +1,12 @@
-# 忽略PyCharm项目配置
+# 忽略编辑器特定的配置文件
+.vscode/
 .idea/
+
+# 忽略 node_modules
+/node_modules
+
+# 忽略构建输出目录
+/dist
 
 # 忽略Python编译后的字节码文件
 __pycache__/
