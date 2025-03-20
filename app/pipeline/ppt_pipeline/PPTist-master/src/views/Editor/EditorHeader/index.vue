@@ -8,19 +8,16 @@
             importPPTXFile(files)
             mainMenuVisible = false
           }">
-            <PopoverMenuItem>导入 pptx 文件（测试版）</PopoverMenuItem>
+            <PopoverMenuItem>导入 pptx 文件</PopoverMenuItem>
           </FileInput>
           <FileInput accept=".pptist"  @change="files => {
             importSpecificFile(files)
             mainMenuVisible = false
           }">
-            <PopoverMenuItem>导入 pptist 文件</PopoverMenuItem>
           </FileInput>
           <PopoverMenuItem @click="setDialogForExport('pptx')">导出文件</PopoverMenuItem>
           <PopoverMenuItem @click="resetSlides(); mainMenuVisible = false">重置幻灯片</PopoverMenuItem>
           <PopoverMenuItem @click="openMarkupPanel(); mainMenuVisible = false">幻灯片类型标注</PopoverMenuItem>
-          <PopoverMenuItem @click="goLink('https://github.com/pipipi-pikachu/PPTist/issues')">意见反馈</PopoverMenuItem>
-          <PopoverMenuItem @click="goLink('https://github.com/pipipi-pikachu/PPTist/blob/master/doc/Q&A.md')">常见问题</PopoverMenuItem>
           <PopoverMenuItem @click="mainMenuVisible = false; hotkeyDrawerVisible = true">快捷操作</PopoverMenuItem>
         </template>
         <div class="menu-item"><IconHamburgerButton class="icon" /></div>
@@ -62,9 +59,6 @@
       <div class="menu-item" v-tooltip="'导出'" @click="setDialogForExport('pptx')">
         <IconDownload class="icon" />
       </div>
-      <a class="github-link" v-tooltip="'Copyright © 2020-PRESENT pipipi-pikachu'" href="https://github.com/pipipi-pikachu/PPTist" target="_blank">
-        <div class="menu-item"><IconGithub class="icon" /></div>
-      </a>
     </div>
 
     <Drawer
