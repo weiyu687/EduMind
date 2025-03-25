@@ -55,7 +55,6 @@ JSON
     {
       "id": 1,
       "question": "题干内容",
-      "background": "背景信息和数据（如果有）",
       "answer": "参考答案"
     },
     ...
