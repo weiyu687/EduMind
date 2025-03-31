@@ -20,3 +20,7 @@ def chat_kimi(user_input:str,
 
     return completion.choices[0].message.content
 
+
+if __name__ == "__main__":
+    print(chat_kimi("你好",
+                    "你是谁？"))

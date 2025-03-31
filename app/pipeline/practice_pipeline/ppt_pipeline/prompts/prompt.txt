@@ -39,7 +39,7 @@ JSON
       "id": 1,
       "question": "题干内容",
       "options": ["选项A", "选项B", "选项C", "选项D", "选项E"],
-      "answer": "正确答案选项索引数组（例如：[0, 2]表示选项A和选项C）"
+      "answer": "正确答案选项索引数组（例如：[A,C]表示选项A和选项C）,多选题直接给出字母"
     },
     ...
   ],
@@ -47,7 +47,7 @@ JSON
     {
       "id": 1,
       "question": "陈述句内容",
-      "answer": "布尔值（true或false）"
+      "answer": "布尔值（True或False）"
     },
     ...
   ],

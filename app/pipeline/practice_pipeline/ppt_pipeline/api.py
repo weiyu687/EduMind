@@ -97,6 +97,7 @@ def generate_questions(generate_question: GenerateQuestion):
 
         logging.info(f"开始生成练习题，参数: SCQ={scq_num}, MCQ={mcq_num}, TOF={tof_num}, SA={sa_num}")
         question = generate_practice(md_filepath, scq_num, mcq_num, tof_num, sa_num)
+        # question = question.replace("```json", "").replace("```", "")
         logging.info(f"练习题生成成功")
 
         return JSONResponse(content=question, status_code=200)
